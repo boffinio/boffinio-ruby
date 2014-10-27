@@ -54,7 +54,7 @@ module BoffinIO
         'email support@boffin.io if you have any questions.)')
     end
 
-    request_opts = { :verify_ssl => false }
+    request_opts = { :verify_ssl => false, :ssl_version => 'TLSv1' }
 
     params = Util.objects_to_ids(params)
     url = api_url(url)
