@@ -20,12 +20,12 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "minitest"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "minitest", "~> 5.4"
+  spec.add_development_dependency "vcr", '~> 2.9'
+  spec.add_development_dependency "webmock",'~> 1.20'
 
-  spec.add_dependency "rest-client"
-  spec.add_dependency "json"
+  spec.add_dependency('rest-client', '~> 1.4')
+  spec.add_dependency('json', '~> 1.8')
   spec.add_dependency('mime-types', '>= 1.25', '< 3.0')
 
 end
